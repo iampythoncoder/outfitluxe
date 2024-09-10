@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutfitLuxe - Homepage</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        
+
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            opacity: 0;
+            animation: fadeInText 1.5s ease-in-out forwards;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            position: relative;
+            z-index: 100;
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .backstory {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .outfit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+            gap: 30px; /* Spacing between boxes */
+        }
+
+        .outfit-item {
+            margin-bottom: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .outfit-item img {
+            width: 100%;
+            height: auto;
+            background-color: #ccc;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .outfit-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a href="homepage.html" style="color: white; text-decoration: none;">OutfitLuxe</a></h1>
+</header>
+
+<nav>
+    <div>
+        <a href="homepage.html">Home</a>
+    </div>
+    <div>
+        <a href="men.html">Men</a>
+    </div>
+    <div>
+        <a href="women.html">Women</a>
+    </div>
+    <div>
+        <a href="story.html">Our story</a>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="section">
+        <div class="backstory">
+            Each piece of our men’s clothing is expertly curated to ensure the highest standards of style, comfort, and quality. From meticulously chosen shirts and versatile pants to sophisticated shoes and refined accessories, every item reflects a commitment to elegance and detail.
+        </div>
+        <h2>The Mens Collection</h2>
+
+        <div class="outfit-grid">
+            <!-- 15 big boxes, 3 per row -->
+            <div class="outfit-item">
+                <a href="https://www.amazon.com/Maiyifu-GJ-Leather-Asymmetric-Motorcycle-Lightweight/dp/B0BNTWV4HW/ref=asc_df_B0BNTWV4HW/?tag=hyprod-20&linkCode=df0&hvadid=693770472476&hvpos=&hvnetw=g&hvrand=2073150207882852834&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9199177&hvtargid=pla-2281690538626&mcid=da2b1eea7496372f9b9e6f0d1235dfd2&th=1&psc=1" target="_blank">
+                    <img src="LeatherJacketMa.jpg" alt="Outfit 1"> <!--maifu leather jacket-->
+                    </a>
+                    <div class="descripton"> 
+                        <p style="font-size: 20px;"><i>This stylish leather jacket boasts premium, supple leather with a sleek, tailored fit. Its timeless design and minimalistic details make it a versatile and sophisticated choice for any occasion.</i>.</p>
+
+                    
+                            <span class="learn-more">Click on the image to learn more</span>
+                        </p>
+                        
+
+                    </div>
+                
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="Leat" alt="Outfit 2">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit3.jpg" alt="Outfit 3">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit4.jpg" alt="Outfit 4">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit5.jpg" alt="Outfit 5">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit6.jpg" alt="Outfit 6">
+                </a>
+            </div>
+
+            <!-- Add more outfit items -->
+            <!-- Total of 15 items -->
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit7.jpg" alt="Outfit 7">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit8.jpg" alt="Outfit 8">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit9.jpg" alt="Outfit 9">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit10.jpg" alt="Outfit 10">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit11.jpg" alt="Outfit 11">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit12.jpg" alt="Outfit 12">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit13.jpg" alt="Outfit 13">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit14.jpg" alt="Outfit 14">
+                </a>
+            </div>
+
+            <div class="outfit-item">
+                <a href="https://www.amazon.com" target="_blank">
+                    <img src="outfit15.jpg" alt="Outfit 15">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 OutfitLuxe</p>
+</footer>
+
+</body>
+</html>

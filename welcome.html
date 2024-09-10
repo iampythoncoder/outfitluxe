@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to OutfitLuxe</title>
+    <style>
+        body {
+            font-family: 'Melindia Avaia', serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .welcome-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .welcome-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .welcome-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .welcome-content a {
+            display: inline-block;
+            font-size: 1.2em;
+            color: #007BFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .welcome-content a:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="welcome-content">
+    <h1>Welcome to OutfitLuxe</h1>
+    <p>At OutfitLuxe, our mission is to bring high-quality, stylish clothing to everyone without breaking the bank. We believe that fashion should be accessible and affordable, allowing you to express your unique style with confidence and ease.</p>
+    <p>Explore our curated collections, where every piece is selected with care to offer you the best in elegance and design. Start your journey with us today and discover the perfect additions to your wardrobe.</p>
+    <a href="homepage.html">Explore Now</a>
+</div>
+
+</body>
+</html>

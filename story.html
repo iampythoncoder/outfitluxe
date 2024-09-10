@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to OutfitLuxe</title>
+    <style>
+        body {
+            font-family: 'Melindia Avaia', serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .welcome-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        .welcome-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .welcome-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .welcome-content a {
+            display: inline-block;
+            font-size: 1.2em;
+            color: #007BFF;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-top: 20px;
+        }
+        .welcome-content a:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="welcome-content">
+    <h1>Our Story...</h1>
+    <p>Growing up, I always dreamed of having access to stylish and well-made clothing, but financial constraints often made that dream seem out of reach. It was my personal experience with limited resources that inspired me to create OutfitLuxe – a website dedicated to making fashion affordable and accessible to everyone.</p>
+    <p>Our mission is to offer high-quality, fashionable clothing at prices that won’t break the bank. At OutfitLuxe, we believe that everyone deserves to look and feel great, regardless of their budget. I invite you to explore our carefully curated collections and find pieces that reflect both your style and our commitment to making fashion accessible for all.</p>
+    <a href="homepage.html">Continue Exploring</a>
+</div>
+
+</body>
+</html>
